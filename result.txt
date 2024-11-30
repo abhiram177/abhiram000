@@ -1,0 +1,6 @@
+PaddleOCR Detected Text:
+We Start With Good
+Because all businesses should
+be doing something good
+
+Tesseract OCR Text (Line by Line):

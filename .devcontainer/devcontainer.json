@@ -1,0 +1,20 @@
+{
+  "name": "OCR Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12", 
+  "features": {
+    "ghcr.io/devcontainers/features/apt-get:1": {
+      "packages": "tesseract-ocr"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y tesseract-ocr && pip install -r requirements.txt",
+  "forwardPorts": [],
+  "remoteUser": "codespace"
+}
